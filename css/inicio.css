@@ -1,0 +1,277 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* TODO ACERCA DEL ENCABEZADO*/ 
+
+header{ 
+  background-color:rgb(223, 223, 223); 
+  color: #000000; 
+  min-height: 50px; 
+  min-width: 2150px;
+  display: flex;
+  justify-content: center;
+  align-items: lefth; 
+} 
+header a{ 
+  color: #000000; 
+  text-decoration: none; 
+  text-transform: uppercase; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 13px;    
+} 
+header li{ 
+  float: centry; 
+  display: inline; 
+  padding: 0 40px 0 40px; 
+
+  
+} 
+header .resaltado, header .actual a{ 
+  color:black; 
+  font-weight: bold; 
+  font-size: 21px;  
+} 
+header{
+  position: fixed;
+}
+/* TODO ACERCA DEL cuerpo*/ 
+
+body{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.video  {
+  background: url(../img/logan.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+
+
+.title {
+  margin-bottom: 400px;
+  font-size: 60%;
+  font-weight: 600px;
+  text-transform: uppercase;
+  color: white;
+  padding: 10PX;
+}
+p{
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: beige;
+  
+  
+}
+.btn {
+  margin: 0 30px;
+  background-color: rgb(225, 37, 37);
+  color: #fff; /* color del texto del botón */
+  padding: 10px 20px; /* tamaño del botón */
+  border-color: rgb(255, 0, 0); /* borde del botón */
+  border-radius: 5px; /* esquina del botón */
+  cursor: pointer; /* cursor del botón */
+}
+
+.btn:hover {
+  background-color: #ffffff; /* color de fondo del botón al pasar el cursor */
+  color: #000000; /* color del texto del botón al pasar el cursor */
+}
+.content{
+  height: 50vh;
+  display: flex;
+  flex-wrap: center;
+  align-items: center;
+}
+
+.btn-home {
+  display: flex;
+}
+
+
+.btn-home a {
+  margin: 0 30px;
+  background-color: rgb(215, 21, 21);
+  color: #fff; /* color del texto del botón */
+  padding: 10px 20px; /* tamaño del botón */
+  border-color: rgb(255, 0, 0); /* borde del botón */
+  border-radius: 5px; /* esquina del botón */
+  cursor: pointer; /* cursor del botón */
+}
+
+.btn-home a:hover {
+  background-color: #ffffff; /* color de fondo del botón al pasar el cursor */
+  color: #000000; /* color del texto del botón al pasar el cursor */
+}
+
+.sau{
+  padding: 10px;
+  background:url(../img/video\ gif.gif) no-repeat center;
+  background-size: cover;
+}
+.jh{
+  padding: 10px;
+  background:url(../img/JONH10.gif) no-repeat center;
+  background-size: cover;
+}
+.moongif{
+  padding: 10px;
+  background:url(../img/moongif.gif) no-repeat center;
+  background-size: cover;
+}
+.walle{
+  padding: 10px;
+  background:url(../img/wallegif1.gif) no-repeat center;
+  background-size: cover;
+}
+
+
+.box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+.box-container .box{
+  height: 11rem;
+  width: 17rem;
+  background: rgb(26, 26, 152); 
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 .3rem 5rem rgb(26, 26, 152);
+  margin: 2rem;
+}
+.box-container .box i {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background: silver;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.box-container .box h3{
+  font-size: 20px;
+  color: violet;
+}
+.box-container .box p{
+  padding: 0% 15px;
+  font-size: 16px;
+
+}
+.about{
+  top: 10px;
+  background:url(../img/FAMILIA.avif) no-repeat center;
+  background-size: cover;
+
+}
+.price {
+  background: url(../img/moonofi1.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.anime {
+  background: url(../img/peliculaA.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.moon{
+  background: url(../img/JONH.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.contaco {
+  padding-top: 20px;
+background: black;
+padding-bottom: 0;
+}
+@media(max-whidth:768){
+.title{
+  margin-bottom: 0;
+  font-size: 40px;
+}
+.sau{
+  height: 120svh;
+}
+.navbar{
+  display: none;
+}
+}
+     
+.logan {
+  margin: 0 0px;
+  background-color: rgb(225, 37, 37);
+  color: #fff; /* color del texto del botón */
+  padding: 10px 1010px; /* tamaño del botón */
+  border-color: rgb(255, 0, 0); /* borde del botón */
+  border-radius: 0px; /* esquina del botón */
+  cursor: pointer; /* cursor del botón */
+}
+.logan:hover {
+  background-color: #ffffff; /* color de fondo del botón al pasar el cursor */
+  color: #000000; /* color del texto del botón al pasar el cursor */
+}
+
+/*PIE DE PAGINA*/ 
+ 
+footer{ 
+  padding: 20px; 
+  margin-top: 20px; 
+  color: black; 
+  background-color:rgb(255, 255, 255); 
+  text-align: center; 
+} 
+/*BOTON VER PELICULA*/ 
+
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  background-color: 0;
+}
+  
+.circulo {
+  width: 250px;
+  height: 250px;
+  border-radius: 500%;
+  background-color: #ff0000;
+  text-align: center;
+  line-height: 250px;
+  font-size: 200px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.circulo::before {
+  content: "E";
+  font-family: fantasy;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #333;
+}
+
+    
+
+
+
+
+
+

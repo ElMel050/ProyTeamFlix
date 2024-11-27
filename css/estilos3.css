@@ -1,0 +1,190 @@
+Estilos2.css 
+
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-image:url(../img/peliculaA.jpg);
+  background-attachment: fixed;
+  
+  }
+.contevid{
+  perspective: 1000px;
+  width: 2000px;
+  height: 290px;
+  position: relative;
+}
+.contevid:hover .tarjeta{
+  animation-play-state: paused;
+}
+
+.tarjeta{
+  width: 280px;
+  height: 470px;
+  background-color: #000000;
+  font-size: 40px;
+  position: absolute;
+  top: 90px;
+  left: 950px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  animation: Carrusel 9s linear infinite;
+}
+@keyframes Carrusel
+{
+  from{
+    transform:rotateY(360deg) translateZ(430px) ;
+    z-index: 10;
+    opacity: 1;
+  }
+  50%
+  {
+    z-index: -10;
+  }
+  to{
+    transform: rotateX(0deg)translateZ(430px);
+  }
+}
+
+#trailer{
+  background-image: url(../img/pelicula13.jpg);
+  
+  
+  
+}
+#trailer:hover{
+  box-shadow: 0px 0px yellow;
+}
+
+#trailer2{
+  background-image: url(../img/TRANS.jpg);
+  background-size: cover;
+animation-delay: -1s;
+}
+#trailer2:hover{
+  box-shadow: 0px 0px 40px rgb(101, 104, 16);
+}
+
+#trailer3{
+  background-image: url(../img/SPIDER.jpg);
+  background-size: cover;
+animation-delay: -2s;
+}
+#trailer3:hover{
+  box-shadow: 0px 0px 40px rgb(3, 8, 161);
+}
+
+#trailer4{
+  background-image: url(../img/HULK.jpg);
+  background-size: cover;
+animation-delay: -3s;
+}
+#trailer4:hover{
+  box-shadow: 0px 0px  40px rgb(3, 139, 7);
+}
+
+#trailer5{
+  background-image: url(../img/AVATAR.jpg);
+  background-size: cover;
+animation-delay: -4s;
+}
+#trailer5:hover{
+  box-shadow: 0px 0px 40px rgb(27, 193, 253);
+}
+
+#trailer6{
+  background-image: url(../img/RP9.jpg);
+  background-size: cover;
+animation-delay: -5s;
+}
+#trailer6:hover{
+  box-shadow: 0px 0px 40px rgb(255, 255, 255);
+}
+
+#trailer7{
+  background-image: url(../img/PACIFIC.jpg);
+  background-size: cover;
+animation-delay: -6s;
+}
+#trailer7:hover{
+  box-shadow: 0px 0px 40px rgb(131, 131, 128);
+}
+
+#trailer8{
+  background-image: url(../img/WICK.jpg);
+  background-size: cover;
+animation-delay: -7s;
+}
+#trailer8:hover{
+  box-shadow: 0px 0px 40px rgb(199, 54, 6);
+}
+
+#trailer9{
+  background-image: url(../img/FUTURE.jpg);
+  background-size: cover;
+animation-delay: -8s;
+}
+#trailer9:hover{
+  box-shadow: 0px 0px 40px rgb(5, 42, 80);
+}
+
+#trailer10{
+  background-image: url(../img/DEADPOOL.jpg);
+  background-size: cover;
+animation-delay: -9s;
+}
+#trailer10:hover{
+  box-shadow: 0px 0px 40px rgb(163, 3, 3);
+}
+
+
+
+ 
+.btn-home a {
+  margin: 10px;
+  background-image: linear-gradient(159deg,#ff620179,rgb(251, 54, 0),#606060);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000000; /* color del texto del botón */
+  padding: 10px 90px; /* tamaño del botón */
+  border-color: rgb(231, 85, 0); /* borde del botón */
+  border-radius: 5px; /* esquina del botón */
+  cursor: pointer; /* cursor del botón */
+
+}
+
+.btn-home a:hover {
+  background-color: #ffffff; /* color de fondo del botón al pasar el cursor */
+  color: #ffffff; /* color del texto del botón al pasar el cursor */
+}
+
+.content{
+  height: 60vh;
+  display: flex;
+  flex-wrap: center;
+  align-items: center;
+}
+.sau{
+  padding: 1px;
+  background: NONE;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.title {
+  margin-bottom: 400px;
+  font-size: 60%;
+  font-weight: 600px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  padding: 20PX;
+}
+
+
+
+
+
+

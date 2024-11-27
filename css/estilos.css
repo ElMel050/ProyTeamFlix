@@ -1,0 +1,47 @@
+
+
+ 
+  
+
+  
+ /* TODO ACERCA DEL ENCABEZADO*/ 
+
+/* color y textura*/ 
+header{ 
+    background-color:rgb(255, 255, 255); 
+    color: #000000; 
+    min-height: 50px; 
+    min-width: 2100px;
+    display: flex;
+    justify-content: center;
+    align-items: lefth; 
+  } 
+
+ /*FORMA Y ESTILOS DEL TITULO*/ 
+ header a{ 
+    color: #000000; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 13px;    
+  } 
+  header li{ 
+    float: centry; 
+    display: inline; 
+    padding: 0 40px 0 40px; 
+  
+    
+  } 
+ 
+
+/*color del resaltado de los titulos*/ 
+header .resaltado, header .actual a{ 
+    color:black; 
+    font-weight: bold; 
+    font-size: 21px;  
+  } 
+  
+  
+
+
+

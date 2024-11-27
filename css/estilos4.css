@@ -1,0 +1,187 @@
+Estilos2.css 
+
+body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-image:url(../img/peliculaA.jpg);
+background-attachment: fixed;
+
+}
+.contevid{
+  perspective: 1000px;
+  width: 2000px;
+  height: 290px;
+  position: relative;
+}
+.contevid:hover .tarjeta{
+  animation-play-state: paused;
+}
+.tarjeta{
+  width: 280px;
+  height: 470px;
+  background-color: #000000;
+  font-size: 40px;
+  position: absolute;
+  top: 90px;
+  left: 950px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  animation: Carrusel 9s linear infinite;
+}
+@keyframes Carrusel
+{
+  from{
+    transform:rotateY(360deg) translateZ(430px) ;
+    z-index: 10;
+    opacity: 1;
+  }
+  50%
+  {
+    z-index: -10;
+  }
+  to{
+    transform: rotateX(0deg)translateZ(430px);
+  }
+}
+
+#trailer{
+  background-image: url(../img/pelicula13.jpg);
+  
+  
+  
+}
+#trailer:hover{
+  box-shadow: 0px 0px yellow;
+}
+
+#trailer2{
+  background-image: url(../img/rick.jpg);
+  background-size: cover;
+animation-delay: -1s;
+}
+#trailer2:hover{
+  box-shadow: 0px 0px 40px rgb(62, 199, 55);
+}
+
+#trailer3{
+  background-image: url(../img/flash.jpg);
+  background-size: cover;
+animation-delay: -2s;
+}
+#trailer3:hover{
+  box-shadow: 0px 0px 40px rgb(248, 81, 4);
+}
+
+#trailer4{
+  background-image: url(../img/inside.jpg);
+  background-size: cover;
+animation-delay: -3s;
+}
+#trailer4:hover{
+  box-shadow: 0px 0px  40px rgb(33, 37, 87);
+}
+
+#trailer5{
+  background-image: url(../img/invincible.jpg);
+  background-size: cover;
+animation-delay: -4s;
+}
+#trailer5:hover{
+  box-shadow: 0px 0px 40px rgb(27, 193, 253);
+}
+
+#trailer6{
+  background-image: url(../img/boys.jpg);
+  background-size: cover;
+animation-delay: -5s;
+}
+#trailer6:hover{
+  box-shadow: 0px 0px 40px rgb(139, 137, 137);
+}
+
+#trailer7{
+  background-image: url(../img/moon.jpg);
+  background-size: cover;
+animation-delay: -6s;
+}
+#trailer7:hover{
+  box-shadow: 0px 0px 40px rgb(131, 131, 128);
+}
+
+#trailer8{
+  background-image: url(../img/casa\ de.jpg);
+  background-size: cover;
+animation-delay: -7s;
+}
+#trailer8:hover{
+  box-shadow: 0px 0px 40px rgb(255, 255, 255);
+}
+
+#trailer9{
+  background-image: url(../img/loki.jpg);
+  background-size: cover;
+animation-delay: -8s;
+}
+#trailer9:hover{
+  box-shadow: 0px 0px 40px rgb(255, 183, 0);
+}
+
+#trailer10{
+  background-image: url(../img/daredevil.jpg);
+  background-size: cover;
+animation-delay: -9s;
+}
+#trailer10:hover{
+  box-shadow: 0px 0px 40px rgb(163, 3, 3);
+}
+
+.btn-home a {
+  margin: 0 30px;
+  background-image: linear-gradient(159deg,#00176879,rgb(9, 82, 147),#00fff2);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000000; /* color del texto del botón */
+  padding: 10px 90px; /* tamaño del botón */
+  border-color: rgb(255, 255, 255); /* borde del botón */
+  border-radius: 5px; /* esquina del botón */
+  cursor: pointer; /* cursor del botón */
+}
+
+.btn-home a:hover {
+  background-color: #00d5ff; /* color de fondo del botón al pasar el cursor */
+  color: #ffffff; /* color del texto del botón al pasar el cursor */
+}
+
+.content{
+  height: 60vh;
+  display: flex;
+  flex-wrap: center;
+  align-items: center;
+}
+.sau{
+  padding: 1px;
+  background: NONE;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.title {
+  margin-bottom: 400px;
+  font-size: 60%;
+  font-weight: 600px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  padding: 1PX;
+}
+
+
+
+
+
+
+
+
+

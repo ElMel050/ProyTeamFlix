@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico</title>
+    <style>
+        /* Importación de fuentes */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        /* Estilo general */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: #000;
+            overflow-x: hidden;
+        }
+
+        /* Fondo del encabezado */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('Imagen de WhatsApp 2024-11-23 a las 23.09.34_9c6bdcda.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen */
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            z-index: 2;
+            position: relative;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            z-index: 2;
+            position: relative;
+        }
+
+        /* Contenedor principal */
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Sección de formulario */
+        .contact-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .contact-section input, .contact-section textarea, .contact-section button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 12px;
+        }
+        .contact-section input, .contact-section textarea {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        .contact-section input:focus, 
+        .contact-section textarea:focus {
+            outline: none;
+            box-shadow: 0 0 8px #8e44ad;
+        }
+        .contact-section button {
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-section button:hover {
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+        }
+
+        /* Sección de ayuda */
+        .faq-section {
+            margin-top: 40px;
+        }
+        .faq-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .faq {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .faq p {
+            margin: 10px 0;
+            color: #ddd;
+        }
+        .faq strong {
+            color: #fff;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bbb;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Estilo para los enlaces */
+        .links a {
+            display: inline-block;
+            background: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .links a:hover {
+            background: #8e44ad;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soporte Técnico</h1>
+        <p>Bienvenido, espero que podamos ayudar</p>
+    </header>
+    <main>
+        <!-- Formulario de contacto -->
+        <section class="contact-section">
+            <h2>Contáctanos</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="message" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Nueva sección con enlaces -->
+        <section class="faq-section">
+            <h2>EN QUÉ PODEMOS AYUDARLO EL DÍA DE HOY</h2>
+            <div class="faq">
+                <p><strong>¿Cómo restablezco mi contraseña?</strong></p>
+                <p>Haz clic en "¿Olvidaste tu contraseña?" en la página de inicio de sesión y sigue las instrucciones.</p>
+            </div>
+            <div class="faq">
+                <p><strong>¿Dónde puedo consultar el estado de mi solicitud?</strong></p>
+                <p>Inicia sesión y ve a la sección "Mis solicitudes" para más detalles.</p>
+            </div>
+            <div class="faq">
+                <p><strong>¿Cómo contacto al soporte?</strong></p>
+                <p>Utiliza el formulario de esta página o envía un correo a soporte@ejemplo.com.</p>
+            </div>
+        </section>
+
+        <!-- Enlaces adicionales -->
+        <section class="links">
+            <a href="sesión.html">Iniciar sesión</a>
+            <a href="formulario.html">Contactar con soporte</a>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Centro de Soporte. Diseñado con <span style="color: #e74c3c;">♥</span> para los cinéfilos.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>ACUAMAN</title> 
+    <meta charset="utf-8"> 
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"> 
+    <link rel="stylesheet" type="text/css" href="css/ACUAMAN.css">
+   
+    <!--- LINK BOOTSTRAP NEW PAG-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <!--- LINK BOOTSTRAP DE LOS TITULOS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head> 
+    <body style="background-image: url(img/acuamanfondooficial.jpg); background-size: 100% 80%;"> 
+    <header> 
+        <div class="col-md-7 offset-md-2"> 
+            <nav> 
+                <ul> 
+                    <li class="actual"><a href="INICIO.html">Inicio</a></li> 
+                    <li><a href="TV y Casa.html">TV y Casa</a></li> 
+                    <li><a href="Entretenimiento.html">ENtretenimiento</a></li> 
+                    <li><a href="iPhone.html">iPhone</a></li> 
+                    <li><a href="Soporte.html">Soporte</a></li> 
+                    <li><a href="Buscar.html">Buscar</a></li> 
+                    
+                    
+                </ul> 
+            </nav> 
+        </div> 
+    </header> 
+    <main class="container mx-auto">
+        <!--Cualquier elemento a añadir al Body dentro de una <section> con la clase "mt-5" -->
+        <!-- popover para el formulario -->
+        <section id="SingIn" hidden>
+            <div class="container h5">
+            <p>Formulario de Sesion</p>
+        </div>
+        </section>
+        
+        <!--  contenido video header-->
+        <section class="container-fluid mx-1 mb-2 video-header">
+            <!-- Contenedor con video de fondo y controles de reproducción   autoplay loop muted-->
+            <div class="container-fluid video-background embed-responsive-16by9">
+                <video class="embed-responsive-item" >
+                    <source src="video/AQUAMAN - Final Trailer - Now Playing In Theaters(1080P_HD).mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <!-- Contenido y controles sobre el video -->
+                <div class="content-overlay">
+                    <!-- Fila para el contenido superior (logo y título) -->
+                    <div class="row">
+                        <div class="col-6 py-4 px-5">
+                            <p class="video-title fs-1">ACUAMAN</p>
+                        </div>
+                        <div class="col-6 py-4 px-5 text-end">
+                            <p class="logo"></p>
+                        </div>
+                    </div>
+                    <!-- Fila para los tres contenedores inferiores -->
+                    <div class="row align-items-center" style="background-color:transparent;backdrop-filter: blur(10px);border-radius: 10px;">
+                        <!-- Primer contenedor: botones o enlaces -->
+                        <div class="col-md-3">
+                            <button class="btn btn-primary w-100 h-25 my-1 font-weight-bolder bg-white text-black">VER PELICULA</button>
+                            
+                        </div>
+                        
+                        <!-- Segundo contenedor: sinopsis -->
+                        <div class="col-md-7">
+                            <p class="fs-6">Arthur Curry, también conocido como Aquaman, es el heredero del reino submarino de Atlantis. 
+                                Arthur es mitad humano y mitad atlante, y debe descubrir quién es realmente y si es digno de ser rey. 
+                                Arthur debe luchar contra su medio hermano, el Rey Orm, para evitar que una guerra entre los mundos del océano y la tierra. </div>
+                        <!-- Tercer contenedor: espacio publicitario o texto adicional -->
+                        <div class="col-md-2">
+                            <div class="d-flex justify-content-end">
+                                <button id="playPauseBtn" class="btn btn-primary">
+                                    <img src="img/play.svg" alt="Play">
+                                </button>
+                                <button id="muteBtn" class="btn btn-primary">
+                                    <img src="img/mute.svg" alt="Mute">
+                                </button>
+                                <button id="fullscreenBtn" class="btn btn-warning">
+                                    <img src="img/full.svg" alt="Fullscreen">
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        </section>
+        <!-- video trailers  -->
+        <div class=" separador container-fluid border-4 ">‎ </div>
+        <div class="container-lg h5">
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Trailers</p>
+        </div>
+        <div class="col-md-3 offset-md-9" >
+            <a href="ESTRENO.html"><button class="btn btn-ligtht w-100 h-25 my-1 font-weight-bolder bg-white text-white">ESTRENO</button></a>
+            
+        </div>
+        <section class="container-fluid">
+            <div class="container-fluid ">
+                <video class="object-fit-cover" controls style="width: 350px; aspect-ratio: 16/9;border-radius: 10px;">
+                    <source src="..." type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </section>
+        <!-- Relacionados  -->
+        <div class=" separador container-fluid border-4 ">‎ </div>
+        <div class="container-lg h5">
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Mas peliculas De Estreno</p>
+        </div>
+        <section>
+            
+         <div class="carrousel">
+            <div class="carrusel-imagenes">
+                <a href="JOKER.html">
+                    <img src="img/JOKER1.jpeg" alt="" class="carrusel-imagen">
+                  </a>
+              <a href="BATMAN.html">
+                <img src="img/BATMAN1.jpeg" alt="" class="carrusel-imagen">
+              </a>
+              
+              <a href="IRON-MAN.html">
+                <img src="img/IRONMAN1.png" alt="" class="carrusel-imagen">
+              </a>
+              <a href="INTERSTELLAR.html">
+                <img src="img/INTERSTELLAR1.jpg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="VENOM.html">
+                <img src="img/VENOM1.jpg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="BOHEMIAN-RHAPSODY.html">
+                <img src="img/BOHEMIANRHAPSODY1.jpeg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="ROBOT-SALVAJE.html">
+                <img src="img/ROBOT-SALVAJEA.jpg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="SUPER-MAN.html">
+                <img src="img/SUPERMAN1.jpg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="JOKER.html">
+                <img src="img/JOKER1.jpeg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="BATMAN.html">
+                <img src="img/BATMAN1.jpeg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="IRON-MAN.html">
+                <img src="img/IRONMAN1.png" alt="" class="carrusel-imagen">
+              </a>
+              
+              <a href="INTERSTELLAR.html">
+                <img src="img/INTERSTELLAR1.jpg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="VENOM.html">
+                <img src="img/VENOM1.jpg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="BOHEMIAN-RHAPSODY.html">
+                <img src="img/BOHEMIANRHAPSODY1.jpeg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="ROBOT-SALVAJE.html">
+                <img src="img/ROBOT-SALVAJEA.jpg" alt="" class="carrusel-imagen">
+              </a>
+              <a href="SUPER-MAN.html">
+                <img src="img/SUPERMAN1.jpg" alt="" class="carrusel-imagen">
+              </a>
+              
+              <!-- ... -->
+            </div>
+          </div>
+          
+
+
+        <div class=" separador container-fluid border-4 ">‎ </div>
+        <div class="container-lg h5">
+            <p>Cast & Crew</p>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="container-fluid text-white">
+        <!--Cualquier elemento a añadir al footer aqui-->
+        <div class="container footer-contain py-4">
+            <h5 class="h5 py-2">ABOUT</h5>
+            <div class="first-foot my-auto d-flex gap-4">
+                <div class="about-movie container-fluid d-flex flex-column">
+                    <h6 class="h6">Kingsman</h6>
+                    <P class="text">ACTION</P>
+                    <p>Un grupo formado por los tiranos y las mentes criminales más malvadas de la historia se une para
+                    desencadenar una guerra que matará a millones de personas. Un hombre tendrá que luchar contra el mal y contra el
+                    tiempo para detenerlos.</p>
+                </div>
+                <div class="about-type container-fluid d-flex flex-column">
+                    <h6>&#9989;17+</h6>
+                    <p class="text">COMMON SENSE</p>
+                    <p>Comentaio acerca del film</p>
+                </div>
+                <div class="reseñas container-fluid d-flex flex-column">
+                    <h6>&#127813;76%</h6>
+                    <p class="text">TOMATOMETER</p>
+                </div>
+            </div>
+            <div class=" separador container-fluid border-0 ">‎ </div>
+            <div class="first-foot d-flex gap-4 mt-0">
+                <div class="information container-fluid bg-transparent d-flex flex-column">
+                    <h6 class="h6">Information</h6>
+                    <P class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</P>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="languajes container-fluid bg-transparent d-flex flex-column">
+                    <h6 class="h6">Languajes</h6>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="accesibility container-fluid bg-transparent d-flex flex-column">
+                    <h6 class="h6">Accesibility</h6>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <footer class="container-fliud text-white text-center">
+
+    </footer>
+    <script>
+        $('#carouselExampleControls').carousel({
+                interval: false
+            })
+        let scrollHeight = Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+        );
+        //alert('Altura completa del documento, con parte desplazada: ' + scrollHeight);
+    </script>
+    <script>
+        // Agregar un evento 'click' al input de búsqueda
+        document.getElementById('searchInput').addEventListener('click', function () {
+            // Redirigir a busca.html cuando se haga click en el input
+            window.location.href = 'busca.html';
+        });
+    </script>
+    <script>
+        // Control de reproducción del video
+        const myVideo = document.querySelector('.video-background video');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const playImage = playPauseBtn.querySelector('img'); // Selecciona la imagen dentro del botón
+        const play = playImage.src
+        const pause = new Image();
+        pause.src = "img/pause.svg"; // Imagen para 'Pausar'
+
+        playPauseBtn.addEventListener('click', () => {
+            if (myVideo.paused) {
+                myVideo.play();
+                playImage.src = pause.src;
+            } else {
+                myVideo.pause();
+                playImage.src = play;
+            }
+        });
+        // Control de Silencio (Mute)
+        const muteBtn = document.getElementById('muteBtn');
+        const muteImage = muteBtn.querySelector('img');
+        const on = muteImage.src
+        const off = new Image();
+        off.src = "img/volume.svg";
+
+        muteBtn.addEventListener('click', () => {
+            if (!myVideo.muted) {
+                muteImage.src = off.src;
+            } else {
+                muteImage.src = on;
+            }
+            myVideo.muted = !myVideo.muted;
+        });
+
+        // Control de Pantalla Completa
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+        fullscreenBtn.addEventListener('click', () => {
+            if (myVideo.requestFullscreen) {
+                myVideo.requestFullscreen();
+            } else if (myVideo.mozRequestFullScreen) { // Firefox
+                myVideo.mozRequestFullScreen();
+            } else if (myVideo.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                myVideo.webkitRequestFullscreen();
+            } else if (myVideo.msRequestFullscreen) { // IE/Edge
+                myVideo.msRequestFullscreen();
+            }
+        });
+    </script>
+    <script>
+        // JavaScript para desplazamiento de tarjetas
+        document.getElementById("scroll-left").addEventListener("click", function () {
+            document.getElementById("highlight-wrapper").scrollBy({ left: -317, behavior: "smooth" });
+        });
+        document.getElementById("scroll-right").addEventListener("click", function () {
+            document.getElementById("highlight-wrapper").scrollBy({ left: 317, behavior: "smooth" });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+</body> 
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Películas</title>
+    <style>
+        /* Importar fuente */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        /* Estilo general */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navegación */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        nav .menu-links {
+            display: flex;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #e50914;
+        }
+
+        /* Icono de ajustes */
+        .settings {
+            position: relative;
+            cursor: pointer;
+        }
+        .settings-icon {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            display: none;
+            flex-direction: column;
+            min-width: 150px;
+            z-index: 1000;
+        }
+        .dropdown-menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+        .dropdown-menu a:hover {
+            background: #333;
+        }
+        .settings:hover .dropdown-menu {
+            display: flex;
+        }
+
+        /* Fondo del encabezado */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('Imagen de WhatsApp 2024-11-25 a las 21.50.32_418f8c6e.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen */
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            z-index: 2;
+            position: relative;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            z-index: 2;
+            position: relative;
+        }
+
+        /* Contenedor principal */
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Categorías */
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .category {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .category:hover {
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            transform: scale(1.05);
+        }
+        .category img {
+            width: 100%;
+            height: 150px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .category h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .category p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bbb;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="menu-links">
+            <a href="#">Inicio</a>
+            <a href="#">Series</a>
+            <a href="#">Películas</a>
+            <a href="#">Estrenos</a>
+        </div>
+        <!-- Icono de ajustes -->
+        <div class="settings">
+            <i class="settings-icon">&#9881;</i> <!-- Icono de engranaje -->
+            <div class="dropdown-menu">
+                <a href="sesión.html">Cuenta</a>
+                <a href="soporte.html">Centro de Ayuda</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Índice de Películas</h1>
+        <p>Descubre y disfruta de tus películas favoritas</p>
+    </header>
+    <main>
+        <!-- Categorías -->
+        <section class="categories">
+            <div class="category">
+                <img src="https://via.placeholder.com/280x150" alt="Acción">
+                <h3>Acción</h3>
+                <p>Películas llenas de adrenalina y emoción.</p>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/280x150" alt="Comedia">
+                <h3>Comedia</h3>
+                <p>Ríe a carcajadas con nuestras comedias.</p>
+            </div>
+            <!-- Agrega más categorías aquí -->
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Índice de Películas. Diseñado con <span style="color: #e74c3c;">♥</span> para los cinéfilos.
+    </footer>
+</body>
+</html>
