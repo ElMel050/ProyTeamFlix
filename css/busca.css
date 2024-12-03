@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+/* Estilos generales */
+body {
+    color: #ccc;
+    background-color: rgb(228, 225, 225);
+}
+/* TODO ACERCA DEL ENCABEZADO*/
+header {
+    background-color: rgb(189, 189, 189);
+    color: #000000;
+    min-height: 50px;
+
+    a {
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5vw;
+    }
+
+    .actual {
+        font-weight: bold;
+        font-size: 2vw;
+    }
+}
+#navbarNav {
+    display: none; /* Ocultar navbar por defecto */
+    display: flex;
+}
+.navbar-nav a:hover{
+    color: #eb2832;
+    transition: color 0.5s;
+}
+#navbarNav.visible {
+    display: block; /* Mostrar navbar cuando se agrega la clase 'visible' */
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+main {
+    color: #ffffff;
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+}
+
+/*                Galería de imágenes */
+.galeria img {
+    width: 19em;
+    border-radius: 50px;
+    border: solid 5px black;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.galeria img:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Efecto de zoom en la imagen */
+}
+
+/*Fin             */
+/* Footer */
+footer {
+    background-color: rgba(30, 30, 30, 200);
+    font-size: 0.8em;
+}
+footer .footer-contain{
+    color: rgba(200, 200, 200, 250);
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .content-overlay .row.justify-content-between {
+        flex-direction: column;
+    }
+    .content-overlay .col-md-4 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+

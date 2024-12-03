@@ -11,7 +11,7 @@ body {
 }
 /* TODO ACERCA DEL ENCABEZADO*/
 header {
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(189, 189, 189);
     color: #000000;
     min-height: 50px;
 
@@ -19,13 +19,28 @@ header {
         color: #000000;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1.5vw;
     }
 
     .actual {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 2vw;
     }
+}
+#navbarNav {
+    display: none; /* Ocultar navbar por defecto */
+    display: flex;
+}
+.navbar-nav a:hover{
+    color: #eb2832;
+    transition: color 0.5s;
+}
+#navbarNav.visible {
+    display: block; /* Mostrar navbar cuando se agrega la clase 'visible' */
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 /*Referente al main content media queries a 1460px y a800px*/
 main {
@@ -41,7 +56,6 @@ main {
         display: flex;
         flex-wrap: center;
 
-
         h1 {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Arial, sans-serif;
             font-size: 3vw;
@@ -53,25 +67,28 @@ main {
             
         }
     }
-
+    .btn-home{
+        width: 33%;
+    }
     .btn-home a {
         display: flex;
         justify-content: center;
+        flex-basis: auto;
         background-color: rgb(215, 21, 21);
         color: #fff;
         border-radius: 5px;/* esquina del botón */
         cursor: pointer;/* cursor del botón */
     }
-    .btn {
+    .btn,.btn2 {
         background-color: rgb(225, 37, 37);
-        font-size: 1vw;
+        font-size: 0.9em;
         color: #fff;
-        padding: 0.5rem 2rem;/* tamaño del botón */
+        padding: 0.5rem 2.7rem;/* tamaño del botón */
         border-color: rgb(255, 0, 0);/* borde del botón */
         border-radius: 5px;/* esquina del botón */
         cursor: pointer;/* cursor del botón */
     }
-    .btn:hover {
+    .btn:hover,.btn2:hover {
         background-color: #ffffff;/* color de fondo del botón al pasar el cursor */
         color: #000000;/* color del texto del botón al pasar el cursor */
     }
@@ -110,8 +127,10 @@ main {
         color: #fff;
     }
     .logan:hover {
-        background-color: #ffffff;/* color de fondo del botón al pasar el cursor */
-        color: #000000;/* color del texto del botón al pasar el cursor */
+        background-color: #f0f0f0;/* color de fondo del botón al pasar el cursor */
+        a:hover{
+            color: #000000;/* color del texto del botón al pasar el cursor */
+        }
     }
 
     .sau {
@@ -138,53 +157,10 @@ main {
         background-size: cover;
     }
 
-
-    .box-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-
-    }
-
-    .box-container .box {
-        height: 11rem;
-        width: 17rem;
-        background: rgb(26, 26, 152);
-        text-align: center;
-        border-radius: 1rem;
-        box-shadow: 0 .3rem 5rem rgb(26, 26, 152);
-        margin: 2rem;
-    }
-
-    .box-container .box i {
-        height: 3rem;
-        width: 3rem;
-        line-height: 3rem;
-        text-align: center;
-        border-radius: 50%;
-        color: white;
-        background: silver;
-        font-size: 2rem;
-        margin: 1rem 0;
-    }
-
-    .box-container .box h3 {
-        font-size: 20px;
-        color: violet;
-    }
-
-    .box-container .box p {
-        padding: 0% 15px;
-        font-size: 16px;
-
-    }
-
     .about {
         top: 10px;
         background: url(../img/FAMILIA.avif) no-repeat center;
         background-size: cover;
-
     }
 
     .price {
@@ -207,31 +183,159 @@ main {
         background-size: cover;
         text-align: center;
     }
+}
+/*inicio 2*/
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-    .contaco {
-        padding-top: 20px;
-        background: black;
-        padding-bottom: 0;
+/* Estilo general */
+#foot {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    
+    /* Navegación */
+    #nav2 {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+    #nav2 .menu-links {
+        display: flex;
+    }
+    #nav2 a {
+        margin: 0 15px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+    #nav2 a:hover {
+        color: #e50914;
+    }
+    
+    /* Icono de ajustes */
+    .settings {
+        position: relative;
+        cursor: pointer;
+    }
+    .settings-icon {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        display: none;
+        flex-direction: column;
+        min-width: 150px;
+        z-index: 1000;
+    }
+    .dropdown-menu a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+    }
+    .dropdown-menu a:hover {
+        background: #333;
+    }
+    .settings:hover .dropdown-menu {
+        display: flex;
+    }
+    
+    /* Fondo del encabezado */
+    #head {
+        text-align: center;
+        padding: 100px 20px;
+        background: url('../img/foot3.jpg') no-repeat center center/cover;
+        color: #fff;
+        position: relative;
+    }
+    #head::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen */
+        z-index: 1;
+    }
+    #head h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        z-index: 2;
+        position: relative;
+    }
+    #head p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        z-index: 2;
+        position: relative;
+    }
+    
+    /* Contenedor principal */
+    #mainn {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+    /* Categorías */
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .category {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        width: 280px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .category:hover {
+        background: linear-gradient(135deg, #8e44ad, #3498db);
+        transform: scale(1.05);
+    }
+    .category img {
+        width: 100%;
+        height: 150px;
+        border-radius: 12px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+    .category h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+    .category p {
+        font-size: 1rem;
+        color: #ddd;
     }
 
-    @media(max-whidth:768) {
-        .title {
-            margin-bottom: 0;
-            font-size: 40px;
-        }
-
-        .sau {
-            height: 120svh;
-        }
-
-        .navbar {
-            display: none;
-        }
-    }
-
-}/*PIE DE PAGINA*/
-
-footer {
+}
+/*fooooooooter*/
+footer p{
     padding: 20px;
     margin-top: 20px;
     color: black;
@@ -239,31 +343,189 @@ footer {
     text-align: center;
 }/*BOTON VER PELICULA*/
 
-h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 10px;
-    font-size: 17px;
-    color: rgb(0, 0, 0);
-    background-color: 0;
-}
-
 .circulo {
+    content:"E";
     width: 10vw;
     height: 10vw;
     border-radius: 500%;
     background-color: #ff0000;
     font-weight: bold;
-    color: #ffffff;
-    
+    color: #ffffff;  
 }
-
 .circulo::before {
     content:"E";
     font-family: fantasy;
-    font-size: 10rem;
+    font-size: 8vw;
     display: block;
     height:1rem;
     border-radius: 500%;
-    background-color: transparent;
-    border: 1px solid #333;
+    background-color: tr8vwarent;
+}
+/*estilos responsive*/
+@media screen and (max-width: 950px) {
+    /*Referente al main content media queries a 1460px y a800px*/
+    main {
+        .content {
+            height: 30vh;
+
+            p{
+                font-size: 2.7vw;
+            }
+        }
+        .btn-home {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 5px;
+        }
+        .btn-home div{
+            align-items: center;
+            flex: 0 0 6rem; /*En orden: crecer, no encoger, con un ancho máximo de 200px */
+        }
+        .btn,.btn2 {
+            font-size: 1.8vw;
+            padding: 0.5rem 3.2em;/* tamaño del botón */
+        }
+        /*segundo*/
+        .contenido {
+            height: 30vh;
+            display: flex;
+            align-items: center;
+
+            .title {
+                margin-top: -20vh;
+                font-size: 2.5vw;
+            }
+
+            p {
+                font-size: 1.8vw;
+                color: beige;
+            }
+
+            .p-title {
+                font-size: 8vw;
+            }
+        }
+
+        .logan {
+            background-color: rgb(225, 37, 37);
+            min-height: 3em;
+            a {
+                font-size: 0.8em;
+            }
+        }
+        .about>div{
+            max-width: 3em;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            a{
+                display: flex;
+                font-size: 1.8vw;
+                padding: 0.5rem 2em;/* tamaño del botón */
+                
+            }
+        }
+    }
+    /*PIE DE PAGINA*/
+    footer {
+        max-height: 1.5rem;
+    }
+}
+/*estilos responsive*/
+@media screen and (max-width: 570px) {
+    main {
+        .content {
+            height: 30vh;
+            h1,p{
+                font-size: 4vw;
+            }
+            p{
+                margin-left: 1rem;
+                margin-right: 0;
+            }
+        }
+        /*segundo*/
+        .contenido {
+            .title {
+                font-size: 2.5vw;
+            }
+            p {
+                font-size: 4vw;
+            }
+        }
+    }
+    /*PIE DE PAGINA*/
+    footer{
+        max-height: min-content;
+    } 
+    p{
+        font-size: 0.5rem;
+    }
+}
+
+/* Estilos para el menu desplegable */
+@media screen and (max-width: 680px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        transition: color 1s;
+    }
+    .abrir-menu,.cerrar-menu {
+        color: #ececec;
+    }
+    .abrir-menu:hover , .cerrar-menu :hover{
+        color: #eb2832;
+    }
+    #navbarNav {
+        height: 20em;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(223, 223, 223);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1000;
+    }
+
+    #navbarNav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar-nav .nav-item a {
+        color: #8f7f7f;
+        text-decoration: none;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-item a:hover {
+        color: #eb2832;  /* Color de los enlaces al pasar el cursor */
+    }
+    main{
+        .btn-home div{
+            align-items: center;
+            flex: 0 0 4rem; /*En orden: crecer, no encoger, con un ancho máximo de 200px */
+        }
+    }
+
 }
